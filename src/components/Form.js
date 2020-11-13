@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Form = ({ input, setInput, todos, setTodos }) => {
+const Form = ({ input, setInput, todos, setTodos, setStatus }) => {
 
     const handleSubmit = (event) => {
         event.preventDefault()
@@ -10,6 +10,10 @@ const Form = ({ input, setInput, todos, setTodos }) => {
             id: Math.floor(Math.random() * 10000)
         }])
         setInput('')
+    }
+
+    const handleStatus = (event) => {
+        setStatus(event.target.value)
     }
 
     return (
@@ -24,10 +28,10 @@ const Form = ({ input, setInput, todos, setTodos }) => {
                 <i className="fas fa-plus-square"></i>
             </button>
             <div className="select">
-                <select name="todos" className="filter-todo">
-                <option value="all">All</option>
-                <option value="completed">Completed</option>
-                <option value="uncompleted">Uncompleted</option>
+                <select onChange={handleStatus} name="todos" className="filter-todo">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Uncompleted</option>
                 </select>
             </div>
         </form>
