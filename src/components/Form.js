@@ -4,12 +4,16 @@ const Form = ({ input, setInput, todos, setTodos, setStatus }) => {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        setTodos([...todos, {
-            text: input,
-            completed: false,
-            id: Math.floor(Math.random() * 10000)
-        }])
-        setInput('')
+        if (!input) {
+            return null
+        } else {
+            setTodos([...todos, {
+                text: input,
+                completed: false,
+                id: Math.floor(Math.random() * 10000)
+            }])
+            setInput('')
+        }
     }
 
     const handleStatus = (event) => {
