@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Live Version
+
+You can see my app online from [here](https://todolist1999.netlify.app/)
+
 ## Available Scripts
 
 In the project directory, you can run:
