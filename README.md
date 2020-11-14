@@ -2,9 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Live Version
+## Hi 🥰
 
-You can see my app online from [here](https://todolist1999.netlify.app/)
+This is a simple Todo List App build with React 💖
+
+you can see the app online from [here](https://todolist1999.netlify.app/)
 
 ## Available Scripts
 
